@@ -46,6 +46,12 @@
 
 }
 
+.balvinder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .owner {
     display: flex;
     margin: 10px 0;

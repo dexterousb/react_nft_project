@@ -13,21 +13,21 @@ const Main = ({ selectedPunk, punkListData }) => {
 
   return (
       <div className='main'>
-          <div className='mainContent'>
-              <div className='punkHighlight'>
-                  <div className='punkContainer'>
-                      <img 
-                        className='selectedPunk'
-                        src = {activePunk.image_url}
-                        alt=''
-                        />
-                  </div>
-              </div>
-              
+        <div className='mainContent'>
+            <div className='punkHighlight'>
+                <div className='punkContainer'>
+                    <img 
+                      className='selectedPunk'
+                      src = {activePunk.image_url}
+                      alt=''
+                      />
+                </div>
+            </div>
+            <div class="balvinder">
               <div className='punkDetails'>
                 <div className='title'>{activePunk.name}
                     <span className='itemNumber'>.#{activePunk.token_id}</span>
-              </div>
+                </div>
               </div>
               <div className='owner'>
                   <div className='ownerImageContainer'>
@@ -49,9 +49,10 @@ const Main = ({ selectedPunk, punkListData }) => {
                   </div>
                 </div>
               </div>
+              </div>
             </div>
+        </div>
       </div>
-    </div>
   )
 }
 
